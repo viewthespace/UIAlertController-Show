@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "Show UIAlertControllers from anywhere."
 
   s.description  = <<-DESC
-                   Light-weight extension to UIAlertController to add show method for presenting Alerts / Action Sheets from anywhere
+                   Light-weight extension to UIAlertController that adds 'show' method for presenting Alerts / Action Sheets from anywhere
                    DESC
 
   s.homepage     = "https://github.com/hightower/UIAlertController-Show"
