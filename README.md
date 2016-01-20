@@ -3,7 +3,9 @@ Light-weight extension that adds `-show` method to UIAlertController.  Presentin
 
 ##Example Usage
 
-Use just like UIAlertViews, from Objective-C:
+This extension provides an API for UIAlertController that mimics the interface for UIAlertViews.
+
+Example in Objective-C:
 ```objc
 UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Hello"
                                                                          message:@"Just like UIAlertViews!"
@@ -12,7 +14,7 @@ UIAlertController *alertController = [UIAlertController alertControllerWithTitle
 [alertController show];
 ```
 
-or from Swift:
+Example in Swift:
 ```swift
 var alertController = UIAlertController(title: "Hello", message: "Just like UIAlertViews!", preferredStyle: .Alert))
 alertController.show()
