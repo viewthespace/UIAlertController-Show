@@ -1,2 +1,2 @@
 # UIAlertController+Show
-Light-weight extension to UIAlertController to add -show method for presenting Alerts / Action Sheets from anywhere
+Light-weight extension that adds `-show` method to UIAlertController.  Presenting UIAlertControllers from anywhere, just like UIAlertView.
