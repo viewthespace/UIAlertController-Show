@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source       = { :git => "https://github.com/hightower/UIAlertController-Show.git", :tag => s.version }
-  s.source_files = 'UIAlertController+Show/**/*.{swift}'
+  s.source_files = 'UIAlertController+Show/UIAlertController+Show.swift'
+  s.frameworks   = 'Foundation', 'UIKit'
   s.requires_arc = true
 
 end

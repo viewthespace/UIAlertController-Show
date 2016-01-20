@@ -7,22 +7,27 @@
 //
 
 import Foundation
+import UIKit
 import ObjectiveC
 
 private var alertWindowAssociationKey: UInt8 = 0
 
-public extension UIAlertController {
+extension UIAlertController {
 
     var alertWindow: UIWindow? {
         get {
             return objc_getAssociatedObject(self, &alertWindowAssociationKey) as? UIWindow
         }
         set(newValue) {
-            objc_setAssociatedObject(self, &alertWindowAssociationKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &alertWindowAssociationKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
 
-    public func show(animated: Bool = true) {
+    @objc public func show() {
+        show(true)
+    }
+
+    @objc public func show(animated: Bool = true) {
         self.alertWindow = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.alertWindow?.rootViewController = UIViewController()
         self.alertWindow?.windowLevel = UIWindowLevelAlert + 1
