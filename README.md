@@ -26,3 +26,15 @@ Add UIAlertController+Show to your Podfile
 ```
 pod 'UIAlertController+Show'
 ```
+
+Then, import the framework where needed.
+
+Objective-C:
+```objc
+@import UIAlertController_Show;
+```
+
+Swift:
+```swift
+import UIAlertController_Show
+```
