@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UIAlertController+Show"
-  s.version      = "1.0.0"
+  s.version      = "0.1.0"
   s.summary      = "Show UIAlertControllers from anywhere."
 
   s.description  = <<-DESC
