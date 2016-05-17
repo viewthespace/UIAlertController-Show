@@ -27,7 +27,7 @@ extension UIAlertController {
         show(true)
     }
 
-    @objc public func show(animated: Bool = true) {
+    @objc public func show(animated: Bool) {
         self.alertWindow = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.alertWindow?.rootViewController = UIViewController()
         self.alertWindow?.windowLevel = UIWindowLevelAlert + 1
