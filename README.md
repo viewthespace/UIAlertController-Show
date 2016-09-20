@@ -16,7 +16,10 @@ UIAlertController *alertController = [UIAlertController alertControllerWithTitle
 
 Example in Swift:
 ```swift
-var alertController = UIAlertController(title: "Hello", message: "Just like UIAlertViews!", preferredStyle: .Alert))
+let alertController = UIAlertController(title: "Hello",
+                                        message: "Just like UIAlertViews!",
+                                        preferredStyle: .Alert))
+
 alertController.show()
 ```
 
