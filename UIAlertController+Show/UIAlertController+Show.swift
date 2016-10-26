@@ -28,11 +28,15 @@ extension UIAlertController {
     }
 
     @objc public func show(_ animated: Bool) {
+        show(animated, completion: nil)
+    }
+  
+    @objc public func show(_ animated: Bool, completion: (() -> Void)? = nil) {
         self.alertWindow = UIWindow(frame: UIScreen.main.bounds)
         self.alertWindow?.rootViewController = UIViewController()
         self.alertWindow?.windowLevel = UIWindowLevelAlert + 1
         self.alertWindow?.makeKeyAndVisible()
-        self.alertWindow?.rootViewController?.present(self, animated: animated, completion: nil)
+        self.alertWindow?.rootViewController?.present(self, animated: animated, completion: completion)
     }
 
     override open func viewDidDisappear(_ animated: Bool) {
