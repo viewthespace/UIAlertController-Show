@@ -24,14 +24,14 @@ extension UIAlertController {
     }
 
     @objc public func show() {
-        show(true, completion: nil)
+        show(true)
     }
 
     @objc public func show(_ animated: Bool) {
-        show(animated)
+        show(animated, completion: nil)
     }
   
-    @objc public func show(_ animated: Bool, completion: (() -> Swift.Void)? = nil) {
+    @objc public func show(_ animated: Bool, completion: (() -> Void)? = nil) {
         self.alertWindow = UIWindow(frame: UIScreen.main.bounds)
         self.alertWindow?.rootViewController = UIViewController()
         self.alertWindow?.windowLevel = UIWindowLevelAlert + 1
